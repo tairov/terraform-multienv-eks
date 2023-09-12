@@ -1,5 +1,5 @@
-variable "cluster_name" {
-}
+# make ingress possible to connect to the load balancer
+variable "cluster_name" {}
 variable "project" {
   description = "Project name"
 }

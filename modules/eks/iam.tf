@@ -73,7 +73,7 @@ resource "aws_iam_policy" "sns_publish_policy" {
         Sid = "${var.project}${var.env}SNSPublishPolicy"
         Effect = "Allow"
         Action = "sns:Publish"
-        Resource = "arn:aws:sns:eu-west-1:319469791318:${var.env}-*"
+        Resource = "arn:aws:sns:${var.region}:319469791318:${var.env}-*"
       }
     ]
   })
